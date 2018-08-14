@@ -1,0 +1,94 @@
+﻿@model IEnumerable<CEPEDI.Zebra.Web.Models.Relatorio>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Margens)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimensoes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Colunas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Linhas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arquivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Layout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Criacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Atualizacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Margens)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dimensoes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Colunas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Linhas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArquivoLayout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Layout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Criacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Atualizacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Guid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Guid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Guid })
+        </td>
+    </tr>
+}
+
+</table>

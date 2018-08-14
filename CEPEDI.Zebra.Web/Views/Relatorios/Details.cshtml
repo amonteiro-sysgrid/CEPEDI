@@ -1,0 +1,107 @@
+﻿@model CEPEDI.Zebra.Web.Models.Relatorio
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Relatorio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Margens)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Margens)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimensoes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dimensoes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colunas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colunas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Linhas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Linhas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Arquivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArquivoLayout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Layout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Layout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Criacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Criacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Atualizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Atualizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Guid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
