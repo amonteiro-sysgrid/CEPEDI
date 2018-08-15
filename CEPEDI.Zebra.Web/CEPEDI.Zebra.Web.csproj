@@ -195,11 +195,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201808140043047_InitialCreate.cs" />
+    <Compile Include="Migrations\201808140043047_InitialCreate.Designer.cs">
+      <DependentUpon>201808140043047_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201808150046268_AddPK_Base.cs" />
+    <Compile Include="Migrations\201808150046268_AddPK_Base.Designer.cs">
+      <DependentUpon>201808150046268_AddPK_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Base.cs" />
     <Compile Include="Models\Dimensao.cs" />
     <Compile Include="Models\Impressora.cs" />
     <Compile Include="Models\Margem.cs" />
     <Compile Include="Models\Relatorio.cs" />
+    <Compile Include="Models\Utility\RawPrinterHelper.cs" />
     <Compile Include="Models\ZebraDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -298,6 +308,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808140043047_InitialCreate.resx">
+      <DependentUpon>201808140043047_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201808150046268_AddPK_Base.resx">
+      <DependentUpon>201808150046268_AddPK_Base.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

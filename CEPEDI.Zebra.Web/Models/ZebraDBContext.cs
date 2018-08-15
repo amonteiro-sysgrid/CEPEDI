@@ -30,6 +30,8 @@ namespace CEPEDI.Zebra.Web.Models
                 m.MapInheritedProperties();
                 m.ToTable("Relatorios");
             });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
